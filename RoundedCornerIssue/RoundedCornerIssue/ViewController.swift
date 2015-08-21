@@ -16,6 +16,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
         
         ButtonUtils.roundCornersForView(self.trailingButton, corners: UIRectCorner.BottomLeft | UIRectCorner.BottomRight | UIRectCorner.TopRight, radius: 5)
         
